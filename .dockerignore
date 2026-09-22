@@ -1,0 +1,10 @@
+.git
+.gitignore
+.env
+.idea
+dist
+*.tar.gz
+*.zip
+tests
+Makefile
+README.md

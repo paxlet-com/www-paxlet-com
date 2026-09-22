@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E9F8EF"/><stop offset="1" stop-color="#EAF6FB"/></linearGradient>
+  </defs>
+  <rect width="1200" height="700" rx="48" fill="url(#fade)"/>
+  <g stroke="#72B996" stroke-width="2.5" opacity=".55" fill="none">
+    <path d="M110 475L285 320L430 430L590 215L760 370L930 205L1090 360"/>
+    <path d="M285 320L590 215M430 430L760 370M590 215L930 205M760 370L1090 360"/>
+  </g>
+  <g>
+    <circle cx="110" cy="475" r="23" fill="#142033"/><circle cx="285" cy="320" r="34" fill="#28C66F"/>
+    <circle cx="430" cy="430" r="24" fill="#13A9E8"/><circle cx="590" cy="215" r="42" fill="#FFFFFF" stroke="#A9D8BE" stroke-width="5"/>
+    <circle cx="760" cy="370" r="30" fill="#49C987"/><circle cx="930" cy="205" r="25" fill="#84D1B0"/>
+    <circle cx="1090" cy="360" r="29" fill="#4AB8DF"/>
+  </g>
+  <g fill="#617083" font-family="Inter, system-ui, sans-serif" font-size="23">
+    <text x="80" y="530">discover</text><text x="245" y="270">package</text><text x="395" y="485">address</text>
+    <text x="545" y="150">paxlet</text><text x="720" y="430">connect</text><text x="895" y="160">verify</text><text x="1040" y="420">grow</text>
+  </g>
+</svg>

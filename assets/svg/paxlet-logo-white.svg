@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 128" role="img" aria-label="Paxlet logo white">
+  <g fill="none" stroke="#FFFFFF" stroke-opacity=".86" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M35 80 L67 34 L94 88 Z"/>
+  </g>
+  <circle cx="35" cy="80" r="15" fill="#FFFFFF"/>
+  <circle cx="67" cy="34" r="18" fill="#49DA84"/>
+  <circle cx="94" cy="88" r="17" fill="#3CC2F2"/>
+  <text x="132" y="88" fill="#FFFFFF" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="72" font-weight="650" letter-spacing="-3">paxlet</text>
+</svg>
