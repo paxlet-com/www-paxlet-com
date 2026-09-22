@@ -1,0 +1,99 @@
+{
+  "schema": "new-project.intent/v3",
+  "ticket": "ticket-001",
+  "summary": "Adopt wellmanifest/wellman baseline standards into www-paxlet-com",
+  "workstream": "governance",
+  "classification": {
+    "kind": "SERVICE",
+    "priority": "P2",
+    "origin": "health"
+  },
+  "allowedPaths": [
+    ".aider.conf.yml",
+    ".cursor/rules/**",
+    ".gitattributes",
+    ".githooks/**",
+    ".github/copilot-instructions.md",
+    ".github/workflows/new-project-branch-hygiene.yml",
+    ".github/workflows/new-project-governance.yml",
+    ".gitignore",
+    ".governance/**",
+    ".subactor/**",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "GEMINI.md",
+    "README.md",
+    "TODO.md",
+    "CHANGELOG.md",
+    "project.sh",
+    "project.bat",
+    "project/**",
+    "scripts/install-agent-hosts.sh",
+    "scripts/runtime.sh",
+    "wellmanifest_governance.py",
+    "worktree-guard.yaml",
+    "Dockerfile"
+  ],
+  "forbiddenPaths": [],
+  "stacks": [],
+  "dependsOn": [],
+  "conflictsWith": [],
+  "integrationTicket": null,
+  "delivery": {
+    "acceptedBaseSha": "4db6512f1c110d85e2c2c624d5d2acb0f7545d6a",
+    "targetBranch": "main",
+    "outcome": "Adoption of wellmanifest standards with worktrees and git lifecycle",
+    "nonGoals": [
+      "Modifying web application templates, PHP runtime code, or static assets"
+    ],
+    "complexity": "L",
+    "estimatedMinutes": 30,
+    "budgets": {
+      "maxImplementationFiles": 15,
+      "maxAffectedComponents": 1,
+      "maxPublicInterfaceChanges": 0,
+      "maxRuntimeDependencies": 0
+    },
+    "architecture": {
+      "status": "accepted",
+      "decision": "Adopt wellmanifest/new-project governance baseline",
+      "components": [
+        {
+          "name": "governance",
+          "paths": [
+            ".gitattributes",
+            ".gitignore",
+            ".governance/**",
+            "CHANGELOG.md",
+            "README.md",
+            "project.bat",
+            "project.sh",
+            "Dockerfile"
+          ]
+        }
+      ],
+      "responsibilityChanges": false,
+      "interfaceChanges": [],
+      "dataChanges": [],
+      "ui": {
+        "impact": "none",
+        "states": [],
+        "evidence": []
+      },
+      "rollback": "Revert to accepted base sha 4db6512f1c110d85e2c2c624d5d2acb0f7545d6a."
+    },
+    "runtimeDependencies": [],
+    "validation": [
+      {
+        "criterion": "AC-01",
+        "commands": ["wellman check --root ."],
+        "evidence": "Wellman check passes cleanly."
+      }
+    ],
+    "standardAdoption": {
+      "sourceRepository": "wellmanifest/new-project",
+      "fromRevision": null,
+      "toRevision": "56223848ea416d59e53123cdcab6e9155a11fe2b"
+    }
+  }
+}

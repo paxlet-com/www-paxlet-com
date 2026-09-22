@@ -1,4 +1,4 @@
-FROM php:8.3-apache
+FROM php@sha256:257dcf070787a1ffc782d90bd589297b63a007064d024cdfb6d30464836ded56
 
 LABEL maintainer="tom@sapletta.com"
 LABEL description="Paxlet Website (paxlet.com) - PHP / Apache / Plesk compatible"
