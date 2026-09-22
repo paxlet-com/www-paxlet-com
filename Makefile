@@ -19,7 +19,9 @@ build: ## Build the Docker image
 	@echo "==> Building Docker image..."
 	docker compose build
 
-.PHONY: up
+.PHONY: up start run
+start: up ## Quick start / alias for up
+run: up   ## Alias for up
 up: ## Start Docker development environment
 	@echo "==> Starting container on port $(PORT)..."
 	PORT=$(PORT) docker compose up -d
@@ -27,7 +29,8 @@ up: ## Start Docker development environment
 	@sleep 3
 	@curl -sf http://127.0.0.1:$(PORT)/health.php > /dev/null && echo "✓ Container running at http://127.0.0.1:$(PORT)" || echo "⚠️ Container started, check 'make logs'"
 
-.PHONY: down
+.PHONY: down stop
+stop: down ## Alias for down
 down: ## Stop Docker development environment
 	@echo "==> Stopping container..."
 	docker compose down
