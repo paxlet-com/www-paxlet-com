@@ -1,8 +1,8 @@
 # Ticket 001: Adopt wellmanifest standards
 
 - **ID**: ticket-001
-- **Status**: IN_PROGRESS
-- **Workflow state**: EDIT
+- **Status**: DONE
+- **Workflow state**: PUBLICATION
 - **Created**: 2026-09-22
 
 ## Goal
